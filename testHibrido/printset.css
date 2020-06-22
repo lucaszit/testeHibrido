@@ -1,0 +1,350 @@
+
+
+body{
+    color: #c63131;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 400px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*ESTILO DO HEADER DA PÁGINA*/
+.header-pagina{
+    background-color: #c63131;
+    padding: 0px 0px 0px 0px;
+    border: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+}
+.header-conteudo{
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    height: 70px;
+}
+.logo {
+    float: none;
+    margin: 0;
+    min-width: 100px;
+    width: 14%;
+    z-index: 1;
+    margin-left: 40px;
+}
+
+/*ESTILO BARRA NAVEGAÇÃO COM PULSEIRAS, INGRESSOS E TICKETS*/
+.navegacao{
+    margin: 0px;
+    width: 40%;
+    min-height: 40px;
+    padding-left: 0px;
+}
+.navegacao-ul{
+    padding-left: 20px;
+    display: flex;
+}
+.navegacao-li1{
+    margin: 0 8% 0 0;
+}
+.navegacao-li1-a{
+    line-height: 40px;
+}
+.navegacao-li1-a:hover{
+    border-color: #f6d85a;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.navegacao-li2-a{
+    line-height: 40px;
+}
+.navegacao-li2-a:hover{
+    border-color: #f6d85a;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.navegacao-li3{
+    margin: 0 0 0 8%;
+}
+.navegacao-li3-a{
+    line-height: 40px;
+}
+.navegacao-li3-a:hover{
+    border-color: #f6d85a;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*ESTILO DO BOTÃO ENTRAR E MEUS PEDIDOS*/
+.span1{
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.header-entrar{
+    margin-bottom: 75px;
+    margin-right: 20px;
+}
+.entrar-a{
+    font-family: "montserrat";
+    color: #fff;
+    margin-left: 6px;
+    transition: 0.3s;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.entrar-a:hover{
+    cursor: pointer;
+}
+/*MEUS PEDIDOS*/
+.nav-pedidos{
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+    margin-left: 10px;
+    margin-right: 15px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.nav-pedidos:hover{
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+    margin-left: 10px;
+    margin-right: 15px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    color: #c63131;
+    background-color: white;
+    border-radius: 5px;
+}
+#pedidos-a{
+    text-align: center;
+    padding: 5px 40px 5px 40px;
+    white-space: nowrap;
+}
+::before{
+    content: '';
+    display: table;
+}
+
+/*ESTILO MEU CARRINHO E BOTÃO CIRCULAR COM NÚMERO NO CENTRO*/
+.carrinho{
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.acao-carrinho{
+    display: flex;
+    align-items: center;
+}
+.texto-carrinho{
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.texto-carrinho:hover{
+    font-size: 15px;
+    cursor: pointer;
+}
+.contador-carrinho{
+    color: #c63131;
+    order: 1;
+    background-color: #fff;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 52px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    min-width: auto;
+    transform: translate(3px, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border: 1px solid #fff;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+.contador-carrinho:hover{
+    color:white;
+    order: 1;
+    background-color: #c63131;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 52px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    min-width: auto;
+    transform: translate(3px, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border: 1px solid #fff;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+.contador-carrinho-num{
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+/*INICIO DO CSS DO CARROSSEL*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #c63131;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  box-shadow: green;
+}
+
+.active, .dot:hover {
+  background-color: #c63131;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*ESTILO DA BARRA DE APELO COMERCIAL*/
+
+.bloco-apelos-comercias{
+    margin-bottom: 50px;
+}
+
+.apelos-comerciais{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.conteudo-apelos-comerciais{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.apelos{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.icones-texto1{
+    text-align: center;
+}
+.each{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin-right: 80%;
+    text-align: center;
+}
+.tooltip-content{
+    background-color: rgba(255,220,221,0.9);
+    position: absolute;
+    transition: visibility .5s linear,opacity .5s linear;
+    opacity: 0;
+    top: -115%;
+    border-radius: 5px;
+    width: 180px;
+    visibility: hidden;
+    display: none;
+}
+
+#total-seguranca-p{
+    text-align: center;
+    font-family: 'montserrat';
+    font-weight: 300;
+    color: #c63131;
+    font-size: 12px;
+    padding: 13px 15px;
+    margin-bottom: 0px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.apelo01{
+    height: 38px;
+}
+
+.texto-apelos{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #303030;
+    font-size: 15px;
+}
+
+#tradicao-confianca-p{
+    text-align: center;
+
+    
+}
+

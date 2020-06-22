@@ -1,0 +1,358 @@
+@font-face{
+    font-family: "montserrat";
+    src: url('montserrat.tff');
+}
+
+body{
+    color: #c63131;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 400px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: white;
+    font-size: 100%;
+}
+
+/*ESTILO DO HEADER DA PÁGINA*/
+.header-pagina{
+    background-color: #c63131;
+    padding: 0px 0px 0px 0px;
+    border: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+}
+.header-conteudo{
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    height: 70px;
+}
+.logo {
+    float: none;
+    margin: 0;
+    min-width: 100px;
+    width: 14%;
+    z-index: 1;
+    margin-left: 40px;
+}
+
+/*ESTILO BARRA NAVEGAÇÃO COM PULSEIRAS, INGRESSOS E TICKETS*/
+.navegacao{
+    margin: 0px;
+    width: 40%;
+    min-height: 40px;
+    padding-left: 0px;
+}
+.navegacao-ul{
+    padding-left: 20px;
+    display: flex;
+}
+.navegacao-li1{
+    margin: 0 8% 0 0;
+}
+.navegacao-li1-a{
+    line-height: 40px;
+}
+.navegacao-li1-a:hover{
+    border-color: #f6d85a;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.navegacao-li2-a{
+    line-height: 40px;
+}
+.navegacao-li2-a:hover{
+    border-color: #f6d85a;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.navegacao-li3{
+    margin: 0 0 0 8%;
+}
+.navegacao-li3-a{
+    line-height: 40px;
+}
+.navegacao-li3-a:hover{
+    border-color: #f6d85a;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*ESTILO DO BOTÃO ENTRAR E MEUS PEDIDOS*/
+.span1{
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.header-entrar{
+    margin-bottom: 75px;
+    margin-right: 20px;
+}
+.entrar-a{
+    font-family: "montserrat";
+    color: #fff;
+    margin-left: 6px;
+    transition: 0.3s;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.entrar-a:hover{
+    cursor: pointer;
+}
+/*MEUS PEDIDOS*/
+.nav-pedidos{
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+    margin-left: 10px;
+    margin-right: 15px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.nav-pedidos:hover{
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+    margin-left: 10px;
+    margin-right: 15px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    color: #c63131;
+    background-color: white;
+    border-radius: 5px;
+}
+#pedidos-a{
+    text-align: center;
+    padding: 5px 40px 5px 40px;
+    white-space: nowrap;
+}
+::before{
+    content: '';
+    display: table;
+}
+
+/*ESTILO MEU CARRINHO E BOTÃO CIRCULAR COM NÚMERO NO CENTRO*/
+.carrinho{
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.acao-carrinho{
+    display: flex;
+    align-items: center;
+}
+.texto-carrinho{
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.texto-carrinho:hover{
+    font-size: 15px;
+    cursor: pointer;
+}
+.contador-carrinho{
+    color: #c63131;
+    order: 1;
+    background-color: #fff;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 52px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    min-width: auto;
+    transform: translate(3px, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border: 1px solid #fff;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+.contador-carrinho:hover{
+    color:white;
+    order: 1;
+    background-color: #c63131;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 52px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    min-width: auto;
+    transform: translate(3px, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border: 1px solid #fff;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+.contador-carrinho-num{
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+/* INICIO CSS PÁGINA PHP*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    width: 1500px;
+    margin-top: 20px;
+    padding: 5px;
+    
+}
+
+.container-nav{
+    width: 300px;
+    height: 500px;
+    background-color: #f4f4f4;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 20px;
+    
+}
+
+.container-section{
+    width: 870px;
+    height: 500px;
+    margin-left: 10px;
+    float: left;
+    background-color: #f4f4f4;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 20px;
+
+}
+
+ul.menu{
+    list-style-type: none;
+
+}
+
+.container-li{
+    width: 250px;
+    height: 50px;
+    background-color: lightcoral;
+    border-radius: 20px;
+    color: black;
+    margin-top: 25px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    list-style-type: none;
+    text-align: center;
+    
+    
+}
+.container-li:hover{
+    width: 250px;
+    height: 50px;
+    background-color: lightgray;
+    cursor: pointer;
+    border-radius: 20px;
+    color: black;
+    margin-top: 25px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    color: white;
+    background-color: #c63131;
+}
+
+.btn:hover{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    color: #c63131;
+    background-color: white;
+    cursor: pointer;
+}
+
+.campo{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+article{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #d6d5d5;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+table, th, td{
+    border: 1px solid #c63131;
+    height: 40px;
+    padding: 5px;
+}
+#altera-btn:hover{
+    cursor: pointer;
+}
+#excluir-btn:hover{
+    cursor: pointer;
+}

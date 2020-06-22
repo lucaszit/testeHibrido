@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printset | Pulseiras, Tickets e Ingressos</title>
+    <!--LINK COM ARQUIVO DE ESTILOS DO CSS-->
+    <link rel="stylesheet" type="text/css" href="printset.css" />
+    <!--LINK COM ARQUIVO DE SCRIPTS DO JS-->
+    <script src="printset.js"></script>
+</head>
+<body>
+    <!-- INICIO DIV PAGINA-->
+    <div class="pagina">
+        <!--INICIO DIV HEADER DA PÁGINA-->
+        <header class="header-pagina">
+            <div class="header-conteudo">
+                <strong class="logo">
+                    <img src="imagens/logo_printset.png" alt="printset logo" width="148" height="43">
+                </strong>
+                <!--NAVEGAÇÃO DE PULSEIRAS, INGRESSOS E TICKET-->
+                <nav class="navegacao" data-action="navegacao">
+                    <ul class="navegacao-ul" role="menu" tabindex="0" >
+                        <li class="navegacao-li1" role="presentation">
+                            <a class="navegacao-li1-a" tabindex="-1" role="menuitem">
+                                <span class="span1">Pulseiras</span>
+                            </a>
+                        </li>
+                        <li class="navegacao-li2" role="presentation">
+                            <a class="navegacao-li2-a" tabindex="-1" role="menuitem">
+                                <span class="span1">Ingressos</span>
+                            </a>
+                        </li>
+                        <li class="navegacao-li3" role="presentation">
+                            <a class="navegacao-li3-a" tabindex="-1" role="menuitem">
+                                <span class="span1">Ticket</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- CONTINUAÇÃO HEADER BOTÃO DE ENTRAR-->
+                <ul class="header-entrar">
+                    <li class="header-entrar-li">
+                        <a class="entrar-a" href="entrar.php">Entrar</a>
+                    </li>
+                </ul>
+                <!--BOTÃO DE MEUS PEDIDOS-->
+                <li class="nav-pedidos">
+                    <a id="pedidos-a">Meus Pedidos</a>
+                </li>
+                <!--CONJUNTO DE PEDIDOS E CONTADOR DE PEDIDOS (CIRCULO COM O NUM. NO CENTRO)-->
+                <div class="carrinho" data-bloc="carrinho">
+                    ::before
+                    <a class="acao-carrinho">
+                        ::before
+                        <span class="texto-carrinho">Carrinho</span>
+                        <span class="contador-carrinho">
+                            <span class="contador-carrinho-num">
+                                0
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- INICIO DO CARROSSEL-->
+        <div class="slideshow-container" data-ride="carousel" data-interval="3000">
+            <div class="mySlides fade">
+                <img src="imagens/banner-bem-vindo.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="imagens/banner-5x-sem-juros.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="imagens/banner-hospital.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="imagens/banner-pulseira.jpg" style="width:100%">
+            </div>
+        </div>
+        <br>
+        <!-- Circulos de passar Imagem -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <!-- FINAL DO CARROSSEL-->
+
+        <!--INICIO DOS APELOS COMERCIAIS-->
+        <div class="bloco-apelos-comerciais">
+            <div class="apelos-comerciais">
+                <div class="conteudo-apelos-comerciais">
+                    <div class="apelos">
+                        <div class="each">
+                            <div class="tooltip-content">
+                                <p id="tooltip-text">
+                                    Total segurança para o seu evento em todos os momentos, 
+                                    da entrada a consumação.
+                                </p>
+                            </div>
+                            <div class="hover-tooltip">
+                                <div class="icones-texto1">
+                                    <div class="icones">
+                                        <img class="apelo01" src="imagens/apelo01.svg" alt="tradição e confiança" 
+                                        title="Total segurança para o seu evento em todos os momentos, 
+                                        da entrada a consumação."> 
+                                    </div>
+                                    <div class="texto-apelos">
+                                        <p id="tradicao-confianca-p">
+                                            Mais de 22 anos  de <br>
+                                            tradição e confiança
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
